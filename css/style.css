@@ -3,7 +3,8 @@
 
 /* Variáveis globais para cores e fontes */
 :root {
-    --yellow: #ac3ada;
+    /*--yellow: #ac3ada;*/
+    --yellow: #5593b8;
     --neon-blue: #5da6ff;
     --bg-dark: #111;
     --bg-darker: #1a1a1a;
