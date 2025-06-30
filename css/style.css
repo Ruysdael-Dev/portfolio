@@ -73,6 +73,15 @@ header {
     z-index: 1000;
     padding: 2rem 0;
     user-select: none;
+    overflow-y: auto;
+
+
+
+
+
+
+
+    
 }
 
 header .user img {
