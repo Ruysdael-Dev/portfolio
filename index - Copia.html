@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ruysdael Morais - Portfólio</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="user">
+      <a href="https://www.linkedin.com/in/ruysdael-oliveira-morais-1a9095232" target="_blank" rel="noopener noreferrer">
+        <img src="images/pic.png" alt="Foto de Ruysdael Morais" />
+      </a>
+      <h1 class="name">Ruysdael Morais</h1>
+      <p class="post">Desenvolvedor Front End</p>
+    </div>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#education">Cursos</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contact">Contato</a></li>
+        <div id="marker"></div>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Botão Mobile -->
+  <button id="menu" class="fas fa-bars" aria-label="Abrir menu"></button>
+
+  <!-- Home -->
+  <section class="home" id="home">
+    <h2>Olá!</h2>
+    <h3>Me chamo <span>Ruysdael Oliveira Morais</span></h3>
+    <p>Desenvolvedor Front End apaixonado por tecnologia, soluções web modernas e design responsivo.</p>
+    <a href="#about" class="btn">Sobre Mim <i class="fas fa-user"></i></a>
+  </section>
+
+  <!-- Sobre -->
+  <section class="about" id="about">
+    <h2 class="heading"><span>Sobre</span> Mim</h2>
+    <div class="row">
+      <div class="info">
+        <h3><strong>Nome:</strong> Ruysdael Oliveira Morais</h3>
+        <h3><strong>Idade:</strong> 32</h3>
+        <h3><strong>Formação:</strong> Análise e Desenvolvimento de Sistemas (2024)</h3>
+        <h3><strong>Pós:</strong> Ciência de Dados e Big Data (2025)</h3>
+        <h3><strong>Nova Graduação:</strong> Engenharia de Software (Agosto/2025)</h3>
+        <h3><strong>Qualificações:</strong> Python, Big Data, Front End</h3>
+        <h3><strong>Idioma:</strong> Português-BR</h3>
+        <a href="#" class="btn">Baixar Currículo <i class="fas fa-download"></i></a>
+      </div>
+      <div class="counter">
+        <div class="box"><span>20+</span><h3>Cursos Completos</h3></div>
+        <div class="box"><span>200h</span><h3>Estudo Prático</h3></div>
+        <div class="box"><span>100%</span><h3>Foco em Front End</h3></div>
+        <div class="box"><span>Cursando</span><h3>Engenharia de Software</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cursos e Certificados -->
+  <section class="education" id="education">
+    <h2 class="heading">Meus <span>Cursos e Certificações</span></h2>
+    <div class="box-container">
+      <div class="box" data-certificado="certificados/lojavirtualphp7.jpg">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2024</span>
+        <h3>Loja Virtual PHP7 - Hugo Cursos</h3>
+        <p>PHP7, POO, MySQLi, Bootstrap 4</p>
+      </div>
+      <div class="box" data-certificado="certificados/lojavirtualcarrinho.jpg">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2025</span>
+        <h3>Loja Virtual PHP7 - Módulo 2 (Udemy)</h3>
+        <p>Carrinho, E-commerce, POO, Bootstrap</p>
+      </div>
+      <div class="box" data-certificado="certificados/magento2.jpg">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2020</span>
+        <h3>Magento 2 - Ricardo Martins (Udemy)</h3>
+        <p>Gerência, reCaptcha, SSH</p>
+      </div>
+      <div class="box" data-certificado="certificados/desenvolvedorweb.jpg">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2018</span>
+        <h3>
+          Curso Web Completo - 
+          <a href="https://www.udemy.com/user/andrefontenelle-2/" target="_blank">André Fontenelle</a>
+        </h3>
+        <p>HTML5, CSS3, JS, PHP, APIs</p>
+      </div>
+    </div>
+
+    <!-- Overlay dos certificados -->
+    <div class="overlay" id="certificadoOverlay">
+      <img id="certificadoImagem" src="" alt="Certificado em tela cheia" />
+    </div>
+  </section>
+
+  <!-- Portfólio -->
+  <section class="portfolio" id="portfolio">
+    <h2 class="heading">Meu <span>Portfólio</span></h2>
+    <div class="box-container">
+      <div class="box"><img src="images/carrocel.gif" alt="Projeto Carrossel" /></div>
+      <div class="box"><img src="images/botoes.gif" alt="Botões Animados" /></div>
+      <div class="box"><img src="images/loading.gif" alt="Carregamento" /></div>
+      <div class="box"><img src="images/img4.jpg" alt="Imagem genérica" /></div>
+      <div class="box"><a href="webscraping.html"><img src="images/webscraping.jpeg" alt="Web Scraping Python" /></a></div>
+      <div class="box" data-projeto="login/login.html">
+        <img src="images/login.gif" alt="Tela de Login" />
+      </div>
+    </div>
+
+    <!-- Overlay projeto login -->
+    <div class="overlay" id="projetoOverlay">
+      <div class="iframe-container">
+        <iframe id="iframeProjeto" src="" frameborder="0"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="contact" id="contact">
+    <h2 class="heading"><span>Entre em</span> Contato</h2>
+    <div class="row">
+      <div class="content">
+        <h3 class="title">Informações</h3>
+        <div class="info">
+          <h3><i class="fas fa-envelope"></i> <a href="mailto:ruysdael.dev@gmail.com">ruysdael.dev@gmail.com</a></h3>
+          <h3><i class="fas fa-phone"></i> <a href="tel:+5597984132747">+55 (97) 98413-2747</a></h3>
+          <h3><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5597984132747" target="_blank">+55 (97) 98413-2747</a></h3>
+          <h3><i class="fas fa-map-marker-alt"></i> Apuí - AM, Brasil</h3>
+        </div>
+      </div>
+
+      <form action="#" method="post">
+        <input type="text" name="nome" placeholder="Nome" class="box" required />
+        <input type="email" name="email" placeholder="E-mail" class="box" required />
+        <input type="text" name="assunto" placeholder="Assunto" class="box" />
+        <textarea name="mensagem" placeholder="Mensagem" class="box message" required></textarea>
+        <button type="submit" class="btn">Enviar <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Botão topo -->
+  <a href="#home" class="top"><img src="images/scroll-top-img.png" alt="Voltar ao topo" /></a>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
