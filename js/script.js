@@ -36,17 +36,33 @@ $(document).ready(function(){
   });
 
 });
+
+
+
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
-    const box = document.getElementById("certificadoBox");
+    const boxes = document.querySelectorAll(".box");
     const overlay = document.getElementById("certificadoOverlay");
+    const img = document.getElementById("certificadoImagem");
 
-    if (box && overlay) {
-        box.addEventListener("click", function () {
-            overlay.style.display = "flex";
+    boxes.forEach(box => {
+        box.addEventListener("click", () => {
+            const src = box.getAttribute("data-certificado");
+            if (src) {
+                img.src = src;
+                overlay.style.display = "flex";
+            }
         });
+    });
 
-        overlay.addEventListener("click", function () {
-            overlay.style.display = "none";
-        });
-    }
+    overlay.addEventListener("click", () => {
+        overlay.style.display = "none";
+        img.src = "";
+    });
 });

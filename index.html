@@ -115,13 +115,17 @@
 <h1 class="heading"> Meus <span>cursos e certificações</span> </h1>
 
 <div class="box-container">
-    <style>
+    
+
+
+<style>
 .box {
     position: relative;
     padding: 20px;
     border: 1px solid #ccc;
     transition: all 0.3s ease;
     cursor: pointer;
+    margin-bottom: 15px;
 }
 
 .overlay {
@@ -156,15 +160,26 @@
     }
 }
 </style>
-    <div class="box" id="certificadoBox">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2024</span>
-        <h3>Loja Virtual php7 - MINISTRADO PELO PORTAL HUGO CURSOS</h3>
-        <p>Técnologias Utilizadas (Criando E-Commerce, Lojas Virtuais, PHP7  Orientado a Objetos, Mysqli, Bootstrap 4)</p>
-    </div>
-    <div class="overlay" id="certificadoOverlay">
-    <img src="certificado.jpg" alt="Certificado">
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="box" data-certificado="certificado.jpg">
+    <i class="fas fa-graduation-cap"></i>
+    <span>2024</span>
+    <h3>Loja Virtual php7 - MINISTRADO PELO PORTAL HUGO CURSOS</h3>
+    <p>Tecnologias Utilizadas: PHP7, OOP, Mysqli, Bootstrap 4</p>
+  </div>
 
     <div class="box">
         <i class="fas fa-graduation-cap"></i>
@@ -233,6 +248,9 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!</p>
     </div>
 
+</div>
+<div class="overlay" id="certificadoOverlay">
+  <img id="certificadoImagem" src="" alt="Certificado">
 </div>
 
 </section>
