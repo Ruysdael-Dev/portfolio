@@ -115,12 +115,35 @@
 <h1 class="heading"> Meus <span>cursos e certificações</span> </h1>
 
 <div class="box-container">
+    <style>
+.box {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
 
+.certificado {
+    display: none;
+    position: absolute;
+    top: 100%; /* abaixo da div */
+    left: 0;
+    margin-top: 10px;
+    z-index: 10;
+    width: 300px; /* ajuste conforme o tamanho do certificado */
+    border: 1px solid #000;
+}
+
+.box:hover .certificado {
+    display: block;
+}
+</style>
     <div class="box">
         <i class="fas fa-graduation-cap"></i>
         <span>2024</span>
         <h3>Loja Virtual php7 - MINISTRADO PELO PORTAL HUGO CURSOS</h3>
         <p>Técnologias Utilizadas (Criando E-Commerce, Lojas Virtuais, PHP7  Orientado a Objetos, Mysqli, Bootstrap 4)</p>
+        <img class="certificado" src="certificado.jpg" alt="Certificado do curso">
     </div>
 
     <div class="box">
