@@ -121,30 +121,50 @@
     padding: 20px;
     border: 1px solid #ccc;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.certificado {
-    display: none;
-    position: absolute;
-    top: 100%; /* abaixo da div */
+.overlay {
+    position: fixed;
+    top: 0;
     left: 0;
-    margin-top: 10px;
-    z-index: 10;
-    width: 300px; /* ajuste conforme o tamanho do certificado */
-    border: 1px solid #000;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
 }
 
-.box:hover .certificado {
-    display: block;
+.overlay img {
+    max-width: 80%;
+    max-height: 80%;
+    animation: zoomInRotate 0.6s ease forwards;
+    opacity: 0;
+    transform: scale(0.2) rotateX(90deg);
+}
+
+@keyframes zoomInRotate {
+    0% {
+        opacity: 0;
+        transform: scale(0.2) rotateX(90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotateX(0deg);
+    }
 }
 </style>
-    <div class="box">
+    <div class="box" id="certificadoBox">
         <i class="fas fa-graduation-cap"></i>
         <span>2024</span>
         <h3>Loja Virtual php7 - MINISTRADO PELO PORTAL HUGO CURSOS</h3>
         <p>Técnologias Utilizadas (Criando E-Commerce, Lojas Virtuais, PHP7  Orientado a Objetos, Mysqli, Bootstrap 4)</p>
-        <img class="certificado" src="certificado.jpg" alt="Certificado do curso">
     </div>
+    <div class="overlay" id="certificadoOverlay">
+    <img src="certificado.jpg" alt="Certificado">
+</div>
 
     <div class="box">
         <i class="fas fa-graduation-cap"></i>

@@ -36,3 +36,17 @@ $(document).ready(function(){
   });
 
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const box = document.getElementById("certificadoBox");
+    const overlay = document.getElementById("certificadoOverlay");
+
+    if (box && overlay) {
+        box.addEventListener("click", function () {
+            overlay.style.display = "flex";
+        });
+
+        overlay.addEventListener("click", function () {
+            overlay.style.display = "none";
+        });
+    }
+});
