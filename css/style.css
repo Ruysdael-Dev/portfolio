@@ -584,3 +584,15 @@ header .navbar ul li a:focus {
     0 0 20px rgba(255, 255, 255, 0.4),
     0 0 40px rgba(255, 255, 255, 0.3);
 }
+
+
+.contact .row .info a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact .row .info a:hover {
+    color: var(--yellow);
+    text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue);
+}
