@@ -1,385 +1,195 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>responsive personal portfolio website design tutorail</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ruysdael Morais - Portfólio</title>
 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
-
-    
-
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  
-   
-<!-- header section starts  -->
 
-<header>
-
+  <!-- Header -->
+  <header>
     <div class="user">
-       <a href="https://www.linkedin.com/in/ruysdael-oliveira-morais-1a9095232"> <img src="images/pic.png" alt=""></a>
-       <a href="https://www.linkedin.com/in/ruysdael-oliveira-morais-1a9095232"> <h3 class="name">Ruysdael Morais</h3></a>
-       <a href="https://www.linkedin.com/in/ruysdael-oliveira-morais-1a9095232"> <p class="post">Desenvolvedor Front End</p></a>
+      <a href="https://www.linkedin.com/in/ruysdael-oliveira-morais-1a9095232" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Ruysdael Morais">
+        <img src="images/pic.png" alt="Foto de Ruysdael Morais" />
+      </a>
+      <h1 class="name">Ruysdael Morais</h1>
+      <p class="post">Desenvolvedor Front End</p>
     </div>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">home</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#education">Cursos e certificações</a></li>
-            <li><a href="#portfolio">portfolio</a></li>
-            <li><a href="#contact">contato</a></li>
-            <div id="marker"></div>
-        </ul>
+    <nav class="navbar" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#home" tabindex="0">Home</a></li>
+        <li><a href="#about" tabindex="0">Sobre</a></li>
+        <li><a href="#education" tabindex="0">Cursos</a></li>
+        <li><a href="#portfolio" tabindex="0">Portfólio</a></li>
+        <li><a href="#contact" tabindex="0">Contato</a></li>
+        
+      </ul>
     </nav>
+  </header>
 
-</header>
+  <!-- Menu Mobile -->
+  <button id="menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="navbar" class="fas fa-bars"></button>
 
-<!-- header section ends -->
+  <!-- Home -->
+  <section class="home" id="home" tabindex="-1">
+    <h2>Olá!</h2>
+    <h3>Me chamo <span>Ruysdael Oliveira Morais</span></h3>
+    <p>Desenvolvedor Front End apaixonado por tecnologia, soluções web modernas e design responsivo.</p>
+    <a href="#about" class="btn" role="button" tabindex="0">Sobre Mim <i class="fas fa-user" aria-hidden="true"></i></a>
+  </section>
 
-<div id="menu" class="fas fa-bars"></div>
+  <!-- Sobre -->
+  <section class="about" id="about" tabindex="-1">
+    <h2 class="heading"><span>Sobre</span> Mim</h2>
 
-<!-- home section starts  -->
+    <div class="row">
+      <div class="info">
+        <h3><strong>Nome:</strong> Ruysdael Oliveira Morais</h3>
+        <h3><strong>Idade:</strong> 32</h3>
+        <h3><strong>Formação:</strong> Análise e Desenvolvimento de Sistemas (2024)</h3>
+        <h3><strong>Pós:</strong> Ciência de Dados e Big Data (2025)</h3>
+        <h3><strong>Nova Graduação:</strong> Engenharia de Software (Agosto/2025)</h3>
+        <h3><strong>Qualificações:</strong> Python, Big Data, Front End</h3>
+        <h3><strong>Idioma:</strong> Português-BR</h3>
+        <a href="#" class="btn" role="button" tabindex="0">Baixar Currículo <i class="fas fa-download" aria-hidden="true"></i></a>
+      </div>
 
-<section class="home" id="home">
-    <h3>Olá !</h3>
-    <h1>Me chamo <span>Ruysdael Oliveira Morais</span></h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio deserunt aspernatur fugiat minus enim ullam repudiandae sint sed magnam tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, at.
-    </p>
-    <a href="#about"><button class="btn">Sobre Mim <i class="fas fa-user"></i></button></a>
-</section>
-
-<!-- home section ends -->
-
-<!-- about section starts  -->
-
-<section class="about" id="about">
-
-<h1 class="heading"> <span>Sobre</span> Mim </h1>
-
-<div class="row">
-
-    <div class="info">
-        <h3> <span> Nome : </span> Ruysdael Oliveira Morais </h3>
-        <h3> <span> Idade : </span> 32 </h3>
-        <h3> <span> Formação : </span> Graduado em Analises e Desenvolvimento de Sistemas (1º Semestre 2024) | Pós em Ciência de dados e big data analytics (1º Semestre 2025) </h3>
-        <h3> <span> Nova Graduação : </span> Engenharia de Software (início em Agosto/2025) </h3>
-        <h3> <span> Qualificações : </span> Analise de dados com Python, big data analytics </h3>
-        <h3> <span> linguagem : </span> Portugues-Brasil </h3>
-        <a href="#"><button class="btn"> Baixar Meu Curriculum <i class="fas fa-download"></i> </button></a>
+      <div class="counter" aria-label="Estatísticas profissionais">
+        <div class="box"><span>2+</span><h3>Anos de Experiência</h3></div>
+        <div class="box"><span>100+</span><h3>Projetos Concluídos</h3></div>
+        <div class="box"><span>430+</span><h3>Clientes Satisfeitos</h3></div>
+        <div class="box"><span>12+</span><h3>Prêmios</h3></div>
+      </div>
     </div>
+  </section>
 
-    <div class="counter">
+  <!-- Cursos e Certificações -->
+  <section class="education" id="education" tabindex="-1">
+    <h2 class="heading">Meus <span>Cursos e Certificações</span></h2>
 
-        <div class="box">
-            <span>2+</span>
-            <h3>Anos de experiencia</h3>
-        </div>
+    <div class="box-container" role="list">
 
-        <div class="box">
-            <span>100+</span>
-            <h3>Projetos concluido</h3>
-        </div>
+      <div class="box" role="listitem" data-certificado="certificados/lojavirtualphp7.jpg" tabindex="0" aria-label="Curso Loja Virtual PHP7 - Hugo Cursos, 2024">
+        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+        <span>2024</span>
+        <h3>Loja Virtual PHP7 - Hugo Cursos</h3>
+        <p>PHP7, POO, MySQLi, Bootstrap 4</p>
+      </div>
 
-        <div class="box">
-            <span>430+</span>
-            <h3>Clientes satisfeitos</h3>
-        </div>
-
-        <div class="box">
-            <span>12+</span>
-            <a href="#cursos"><h3>Premios ganho</h3></a>
-
-
-           
-        </div>
-
-    </div>
-
-</div>
-
-</section>
-
-<!-- about section ends -->
-
-<!-- education section starts  -->
-
-<section class="education" id="education">
-
-<h1 class="heading"> Meus <span>cursos e certificações</span> </h1>
-
-<div class="box-container">
-    
-
-
-<style>
-.box {
-    position: relative;
-    padding: 20px;
-    border: 1px solid #ccc;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    margin-bottom: 15px;
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.8);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-}
-
-.overlay img {
-    max-width: 80%;
-    max-height: 80%;
-    animation: zoomInRotate 0.6s ease forwards;
-    opacity: 0;
-    transform: scale(0.2) rotateX(90deg);
-}
-
-@keyframes zoomInRotate {
-    0% {
-        opacity: 0;
-        transform: scale(0.2) rotateX(90deg);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1) rotateX(0deg);
-    }
-}
-</style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="box" data-certificado="certificados/lojavirtualphp7.jpg">
-    <i class="fas fa-graduation-cap"></i>
-    <span>2024</span>
-    <h3>Loja Virtual php7 - MINISTRADO PELO PORTAL HUGO CURSOS</h3>
-    <p>Tecnologias Utilizadas: PHP7, OOP, Mysqli, Bootstrap 4</p>
-  </div>
-
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
+      <div class="box" role="listitem" tabindex="0" aria-label="Curso Loja Virtual PHP7 - Módulo 2 (Udemy), 2025">
+        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
         <span>2025</span>
-        <h3>Loja Virtual php7 - 2 - (carrinho de compras) - MINISTRADO PELO PORTAL UDEMMY</h3>
-        <p>Técnologias Utilizadas (Criando E-Commerce, Lojas Virtuais, PHP7  Orientado a Objetos, Mysqli, Bootstrap 4)</p>
-    </div>
+        <h3>Loja Virtual PHP7 - Módulo 2 (Udemy)</h3>
+        <p>Carrinho, E-commerce, POO, Bootstrap 4</p>
+      </div>
 
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2025</span>
-        <h3>Loja Virtual php7 - 3 - (sistema de pedidos) - MINISTRADO PELO PORTAL UDEMMY</h3>
-        <p>Técnologias Utilizadas (Criando E-Commerce, Lojas Virtuais, PHP7  Orientado a Objetos, Mysqli, Bootstrap 4)</p>
-    </div>
+      <div class="box" role="listitem" data-certificado="certificados/magento2.jpg" tabindex="0" aria-label="Curso Magento 2 - Ricardo Martins (Udemy), 2020">
+        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+        <span>2020</span>
+        <h3>Magento 2 - Ricardo Martins (Udemy)</h3>
+        <p>Gerência, segurança, reCaptcha, SSH</p>
+      </div>
 
-        <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2025</span>
-        <h3>Loja Virtual php7 - 4 - (gerenciamento de clientes) - MINISTRADO PELO PORTAL UDEMMY</h3>
-        <p>Técnologias Utilizadas (Criando E-Commerce, Lojas Virtuais, PHP7  Orientado a Objetos, Mysqli, Bootstrap 4)</p>
-    </div>
-
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2025</span>
-        <h3>Loja Virtual php7 - 5 - (painel administrativo) - MINISTRADO PELO PORTAL UDEMMY</h3>
-        <p>Técnologias Utilizadas (Criando E-Commerce, Lojas Virtuais, PHP7  Orientado a Objetos, Mysqli, Bootstrap 4)</p>
-    </div>
-
-
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
+      <div class="box" role="listitem" tabindex="0" aria-label="Curso Web Completo - André Fontenelle, 2018">
+        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
         <span>2018</span>
-        <h3>Curso Desenvolvedor Web Completo + 10 de Projetos - Ministrado por 
-        <a href="https://www.udemy.com/user/andrefontenelle-2/" target="_blank" rel="noopener noreferrer">
-            André Fontenelle
-        </a> na Udemy</h3>
-        <p>Esse curso Contem um total de 48,5 Horas em video divido em 642 aulas, HTML 5, CSS 3, Javascript, jQuery, BootStrap, ECMAScript 6.0, YouTube API v3.0, PHP, PHP com Banco de Dados MySQL, PHP com AJAX, Webpack, </p>
+        <h3>
+          Curso Web Completo - 
+          <a href="https://www.udemy.com/user/andrefontenelle-2/" target="_blank" rel="noopener noreferrer">André Fontenelle</a>
+        </h3>
+        <p>HTML5, CSS3, JS, PHP, Webpack, APIs</p>
+      </div>
+
     </div>
 
-    
-    <div class="box" data-certificado="certificados/magento2.jpg">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2020</span>
-        <h3>Curso Magento 2: Como usar, gerenciar e administrar uma loja - Ministrado por Ricardo Martins na Udemmy</h3>
-        <p>Curso com um Total de 7 Horas, dividido em 47 aulas, explicando sobre como cadastrar e organizar produtos em categorias, gerenciar caches, instalar Google reCaptcha, SSH, Otimizar a segurança da loja e da área administrativa,</p>
+    <!-- Overlay do Certificado -->
+    <div class="overlay" id="certificadoOverlay" role="dialog" aria-modal="true" aria-hidden="true" tabindex="-1">
+      <img id="certificadoImagem" src="" alt="Certificado" />
     </div>
+  </section>
 
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2019</span>
-        <h3>front end development</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!</p>
+  <!-- Portfólio -->
+  <section class="portfolio" id="portfolio" tabindex="-1">
+    <h2 class="heading">Meu <span>Portfólio</span></h2>
+    <div class="box-container" role="list">
+      <div class="box" role="listitem" tabindex="0" aria-label="Projeto Carrossel">
+        <a href="#"><img src="images/carrocel.gif" alt="Demonstração de carrossel" /></a>
+      </div>
+      <div class="box" role="listitem" tabindex="0" aria-label="Projeto Botões">
+        <img src="images/botoes.gif" alt="Animação de botões" />
+      </div>
+      <div class="box" role="listitem" tabindex="0" aria-label="Projeto Loading">
+        <img src="images/loading.gif" alt="Indicador de carregamento" />
+      </div>
+      <div class="box" role="listitem" tabindex="0" aria-label="Projeto imagem 4">
+        <img src="images/img4.jpg" alt="Imagem projeto 4" />
+      </div>
+      <div class="box" role="listitem" tabindex="0" aria-label="Projeto Web Scraping Python">
+        <a href="webscraping.html"><img src="images/webscraping.jpeg" alt="Web Scraping Python" /></a>
+        <h3>Web Scraping Python</h3>
+      </div>
+      <div class="box" role="listitem" tabindex="0" aria-label="Projeto Login">
+        <a href="login/login.html"><img src="images/login.gif" alt="Tela de Login" /></a>
+      </div>
     </div>
+  </section>
 
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2020</span>
-        <h3>front end development</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!</p>
-    </div>
-
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2021</span>
-        <h3>front end development</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!</p>
-    </div>
-
-</div>
-<div class="overlay" id="certificadoOverlay">
-  <img id="certificadoImagem" src="" alt="Certificado">
-</div>
-
-</section>
-
-<!-- education section ends -->
-
-<!-- portfolio section starts  -->
-
-<section class="portfolio" id="portfolio">
-
-<h1 class="heading"> meu <span>portfolio</span> </h1>
-
-<div class="box-container">
-
-    <div class="box">
-       <a href="http://www.google.com.br"> <img src="images/carrocel.gif" alt=""></a>
-    </div>
-
-    <div class="box">
-        <img src="images/botoes.gif" alt="">
-    </div>
-
-    <div class="box">
-        <img src="images/loading.gif" alt="">
-    </div>
-
-    <div class="box">
-        <img src="images/img4.jpg" alt="">
-    </div>
-
-    <div class="box">
-        <a href="webscraping.html"><img src="images/webscraping.jpeg" alt=""></a>
-        <h3>legenda de imagens</h3>
-    </div>
-
-    <div class="box">
-        <a href="login/login.html"><img src="images/login.gif" alt=""></a>
-    </div>
-   
-
-</div>
-
-</section>
-
-<!-- portfolio section ends -->
-
-<!-- contact section starts  -->
-
-<section class="contact" id="contact">
-
-<h1 class="heading"> <span>Entre em</span> contato </h1>
-
-<div class="row">
-
-    <div class="content">
-
-        <h3 class="title">informações de contato</h3>
-
+  <!-- Contato -->
+  <section class="contact" id="contact" tabindex="-1">
+    <h2 class="heading"><span>Entre em</span> Contato</h2>
+    <div class="row">
+      <div class="content" aria-label="Informações de contato">
+        <h3 class="title">Informações</h3>
         <div class="info">
-            <h3> <i class="fas fa-envelope"></i> ruysdael.dev@gmail.com </h3>
-            <h3> <i class="fas fa-phone"></i> +55(97)98413-2747 </h3>
-            <h3> <i class="fas fa-phone"></i> +55(97)98413-2747 </h3>
-            <h3> <i class="fas fa-map-marker-alt"></i> Apuí-AM, Brasil - 69265-000. </h3>
+          <h3><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:ruysdael.dev@gmail.com">ruysdael.dev@gmail.com</a></h3>
+          <h3><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+5597984132747">+55 (97) 98413-2747</a></h3>
+          <h3><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Apuí - AM, Brasil</h3>
         </div>
+      </div>
 
+      <form action="#" method="post" aria-label="Formulário de contato" novalidate>
+        <input type="text" name="nome" placeholder="Nome" class="box" required aria-required="true" />
+        <input type="email" name="email" placeholder="E-mail" class="box" required aria-required="true" />
+        <input type="text" name="assunto" placeholder="Assunto" class="box" />
+        <textarea name="mensagem" placeholder="Mensagem" class="box message" required aria-required="true"></textarea>
+        <button type="submit" class="btn" aria-label="Enviar mensagem">Enviar <i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+      </form>
     </div>
+  </section>
 
-    <form action="">
+  <!-- Botão Topo -->
+  <a href="#home" class="top" aria-label="Voltar ao topo">
+    <img src="images/scroll-top-img.png" alt="Seta para cima" />
+  </a>
 
-        <input type="text" placeholder="Nome" class="box">
-        <input type="email" placeholder="email" class="box">
-        <input type="text" placeholder="Assunto" class="box">
-        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="mensagem"></textarea>
-        <button type="submit" class="btn"> Enviar <i class="fas fa-paper-plane"></i> </button>
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/script.js"></script>
 
-    </form>
-
-</div>
-
-</section>
-
-<!-- contact section ends -->
-
-
-<!-- scroll top button  -->
-
-<a href="#home" class="top">
-    <img src="images/scroll-top-img.pn" alt="">
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- jquery cdn link  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-
-
-<!-- aqui um script referente ao botao -->
-<script>
-    const marker = document.querySelector
-    ('#marker');
+  <!-- Neon Marker JS -->
+  <script>
+    const marker = document.querySelector('#marker');
     const item = document.querySelectorAll('ul li a');
-    function indicator(e){
-        marker.style.left = e.offsetLeft+'px';
-        marker.style.width = e.offsetwidth+'px';
-    }
-    item.forEach(link=>{
-        link.addEventListener('mousemove',(e) => {
-            indicator(e.target);
-        })
-    })
-</script>
 
+    function indicator(e) {
+      marker.style.left = e.offsetLeft + 'px';
+      marker.style.width = e.offsetWidth + 'px';
+    }
+
+    item.forEach(link => {
+      link.addEventListener('mousemove', (e) => {
+        indicator(e.target);
+      });
+    });
+  </script>
 
 </body>
->>>>>>> 844b9ea62d2742954a3b37325c51745a1f00b404
 </html>
