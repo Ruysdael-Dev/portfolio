@@ -48,7 +48,11 @@
             <h1 class="heading"> <span>Web</span> Scraping </h1> 
             <div class="row"> 
                 <div class="info"> 
+<<<<<<< HEAD
                     <h3 class="descricao"> <span> Descrição : </span> Esse é um pequeno codigo de Web Scraping, que é espécie de “garimpo” da internet envolve extrair informações relevantes de determinado site para depois serem analisadas.
+=======
+                    <h3 class="descricao"> <span> Descrição : </span> Esse é um pequeno codigo de Web Scraping, que é espécie de “garimpo” da internet envolve extrair informações relevantes de determinado site para depois serem analisadas.
+>>>>>>> 844b9ea62d2742954a3b37325c51745a1f00b404
              Esses dados serão usados para aprimorar a tomada de decisões com maior chance de acerto e sucesso, nesse pequeno codigo em python eu busco o valor, descrição,</br> e o link de todos os produtos em oferta no mercado livre e salva em um arquivo dados.xml. 
                 </h3>                 
                 <div class="box-container"> 
@@ -63,6 +67,7 @@
             <!-- custom js file link  -->             
             <script src="js/script.js"></script>             
             <!-- aqui um script referente ao botao -->             
+<<<<<<< HEAD
             <script>
     const marker = document.querySelector
     ('#marker');
@@ -76,6 +81,21 @@
             indicator(e.target);
         })
     })
+=======
+            <script>
+    const marker = document.querySelector
+    ('#marker');
+    const item = document.querySelectorAll('ul li a');
+    function indicator(e){
+        marker.style.left = e.offsetLeft+'px';
+        marker.style.width = e.offsetwidth+'px';
+    }
+    item.forEach(link=>{
+        link.addEventListener('mousemove',(e) => {
+            indicator(e.target);
+        })
+    })
+>>>>>>> 844b9ea62d2742954a3b37325c51745a1f00b404
 </script>             
     </body>     
 </html>
